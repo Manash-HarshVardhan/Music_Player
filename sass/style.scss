@@ -1,0 +1,32 @@
+.body{
+    font-family: Manrope, Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+    &--sec{
+        width: 300px;
+        height: 85vh;
+        box-shadow: 0px 0px 25px 10px rgba(255, 95, 95, 0.3);
+        &--img{
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.3);
+        }
+       
+        
+    }
+}
+
+.active{
+    transform-origin: center;
+    animation: rotateArt 6s infinite linear forwards ;
+
+}
+@keyframes rotateArt {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+

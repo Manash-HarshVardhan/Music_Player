@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/sass/style.css">
+    <script src="https://kit.fontawesome.com/57576f4c0d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="body">
+    <section class="body--sec flex flex-col items-center justify-around" >
+        <img class="body--sec--img" src="https://samplesongs.netlify.app/album-arts/faded.jpg" alt="Album">
+        
+        <div>
+        <h3 class="font-bold text-2xl body--sec--title">Starboy ft. Daft Punk</h3>
+        
+        <p class="text-gray-400 body--sec--artist">The Weekend</p>
+        </div>
+        
+        <div class="progresscontainer flex gap-3">
+
+           <p class="duration">0:00</p>
+           <input type="range" class="progresscontainer--progress w-44 " value="0" max="100 " >
+           <p class="currentTime">0:00</p>
+           <audio class="audio" src="https://samplesongs.netlify.app/Faded.mp3"></audio>
+        </div>
+
+        <!-- btncontainer -->
+        <div class="body--sec--btncontainer flex gap-3 items-center justify-around ">
+            <i class="fa-solid fa-shuffle cursor-pointer"></i>
+            
+            <div class="border-2 border-gray-400  gap-5 pr-6 pl-6 h-10 rounded-full relative w-[200px] flex justify-between items-center">
+                <i class="fa-solid fa-backward cursor-pointer"></i>
+                
+                <div class="w-14 h-14  rounded-[50%] bg-[#FB0641] text-white absolute left-0 right-0 top-0 bottom-0 m-auto flex justify-center items-center  ">
+                <i class="fa-solid fa-play text-[28px] playpausebtn cursor-pointer"></i>
+                </div>
+                <i class="fa-solid fa-forward cursor-pointer"></i>
+            </div>
+
+            <i class="fa-solid fa-repeat cursor-pointer"></i>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
